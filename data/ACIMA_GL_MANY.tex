@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,pdftex]{geometry}
+\usepackage{longtable}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+
+Model 2: ARMAX, using observations 2009:04--2022:04 ($T$ = 157)\\
+Dependent variable: Chrome\\
+Standard errors based on Hessian
+
+\vspace{1em}
+
+\begin{tabular}{lr@{.}lr@{.}lr@{.}lr@{.}l}
+  &
+ \multicolumn{2}{c}{Coefficient} &
+  \multicolumn{2}{c}{Std.\ Error} &
+   \multicolumn{2}{c}{$z$} &
+    \multicolumn{2}{c}{p-value} \\[1ex]
+const &
+  85&2923 &
+    2&09748 &
+      40&66 &
+        0&0000 \\
+$\phi_{1}$ &
+  0&964369 &
+    0&0197778 &
+      48&76 &
+        0&0000 \\
+$\theta_{1}$ &
+  0&0648759 &
+    0&0811135 &
+      0&7998 &
+        0&4238 \\
+Firefox &
+  $-$0&808607 &
+    0&0739922 &
+      $-$10&93 &
+        0&0000 \\
+IE &
+  $-$0&847427 &
+    0&0381854 &
+      $-$22&19 &
+        0&0000 \\
+Safari &
+  $-$0&812903 &
+    0&0809532 &
+      $-$10&04 &
+        0&0000 \\
+Opera &
+  $-$1&28333 &
+    0&123714 &
+      $-$10&37 &
+        0&0000 \\
+Android &
+  $-$1&01785 &
+    0&192474 &
+      $-$5&288 &
+        0&0000 \\
+\end{tabular}
+
+\vspace{1ex}
+\begin{tabular}{lrlr}
+Mean dependent var &  42.49242 & S.D. dependent var &  19.69325 \\
+Mean of innovations &  0.009650 & S.D. of innovations &  0.423785 \\
+$R^2$ &  0.999534 & Adjusted $R^2$ &  0.999516 \\
+Log-likelihood & $-$89.37661 & Akaike criterion &  196.7532 \\
+Schwarz criterion &  224.2594 & Hannan--Quinn &  207.9245 \\
+\end{tabular}
+
+
+\vspace{1em}
+
+\begin{tabular}{llrrrrr}
+& & & Real & Imaginary & Modulus & Frequency \\ \hline
+AR \\ 
+& Root & 1 & $1.0369$ & $0.0000$ & $1.0369$ & $0.0000$ \\ 
+MA \\ 
+& Root & 1 & $-15.4140$ & $0.0000$ & $15.4140$ & $0.5000$ \\ \hline
+\end{tabular}
+
+\end{center}
+
+\end{document}
