@@ -1,0 +1,13 @@
+# Log started 2022-05-15 12:53
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open \
+  /home/c0sta/PycharmProjects/1899_full_msu_courser_data_analisis/data/sandp500/sp500_10.csv
+var 5 AAL ; AAPL AAP ABBV
+var 10 AAPL ACN ; AAP ABBV AAL ADBE --lagselect
+var 2 AAPL ACN ; AAP ABBV AAL ADBE --lagselect
+var 2 AAPL ACN ; AAP ABBV AAL ADBE
+var 2 AAPL ACN ; AAP ABBV AAL ADBE
+dataset addobs 4
+modtest 5 --autocorr
+var 2 AAPL ACN ; AAP ABBV AAL ADBE --robust

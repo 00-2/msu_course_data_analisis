@@ -1,0 +1,197 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,pdftex]{geometry}
+\usepackage{longtable}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+VAR system, lag order 2\\
+OLS estimates, observations 2013-02-12--2018-02-07 ($T=1257$)
+\end{center}
+\noindent
+Log-likelihood = $-$4313.44\par
+\noindent
+Determinant of covariance matrix = 3.27825\par
+\noindent
+AIC $= 6.8917$ \par
+\noindent
+BIC $= 6.9653$ \par
+\noindent
+HQC $= 6.9193$ \par
+\noindent
+Portmanteau test: LB(48) = 172.469, df = 184 [0.7188]\par
+\begin{center}
+
+Equation 1: AAPL\\
+
+\vspace{1em}
+
+\begin{tabular}{lr@{.}lr@{.}lr@{.}lr@{.}l}
+  &
+ \multicolumn{2}{c}{Coefficient} &
+  \multicolumn{2}{c}{Std.\ Error} &
+   \multicolumn{2}{c}{$t$-ratio} &
+    \multicolumn{2}{c}{p-value} \\[1ex]
+const &
+  2&30374 &
+    0&506761 &
+      4&546 &
+        0&0000 \\
+AAPL$_{t-1}$ &
+  0&861486 &
+    0&0303553 &
+      28&38 &
+        0&0000 \\
+AAPL$_{t-2}$ &
+  0&114061 &
+    0&0302960 &
+      3&765 &
+        0&0002 \\
+ACN$_{t-1}$ &
+  $-$0&0619001 &
+    0&0449921 &
+      $-$1&376 &
+        0&1691 \\
+ACN$_{t-2}$ &
+  0&0183163 &
+    0&0450402 &
+      0&4067 &
+        0&6843 \\
+AAP &
+  0&00505369 &
+    0&00267239 &
+      1&891 &
+        0&0588 \\
+ABBV &
+  $-$0&00433648 &
+    0&00897743 &
+      $-$0&4830 &
+        0&6292 \\
+AAL &
+  0&0188804 &
+    0&0111926 &
+      1&687 &
+        0&0919 \\
+ADBE &
+  0&0410972 &
+    0&00773274 &
+      5&315 &
+        0&0000 \\
+\end{tabular}
+
+\vspace{1ex}
+\begin{tabular}{lrlr}
+Mean dependent var &  109.1209 & S.D. dependent var &  30.52931 \\
+Sum squared resid &  3618.734 & S.E. of regression &  1.702829 \\
+$R^2$ &  0.996909 & Adjusted $R^2$ &  0.996889 \\
+$F(8, 1248)$ &  50309.13 & P-value($F$) &  0.000000 \\
+$\hat{\rho}$ &  0.016166 & Durbin--Watson &  1.955493 \\
+\end{tabular}
+
+
+\end{center}
+
+\begin{center}
+F-tests of zero restrictions\\[1em]
+\begin{tabular}{lll}
+All lags of AAPL & $F(2, 1248) = 16466.1$ & [0.0000]\\
+All lags of ACN & $F(2, 1248) = 9.68168$ & [0.0001]\\
+All vars, lag 2 & $F(2, 1248) = 9.01533$ & [0.0001]\\
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\begin{center}
+
+Equation 2: ACN\\
+
+\vspace{1em}
+
+\begin{tabular}{lr@{.}lr@{.}lr@{.}lr@{.}l}
+  &
+ \multicolumn{2}{c}{Coefficient} &
+  \multicolumn{2}{c}{Std.\ Error} &
+   \multicolumn{2}{c}{$t$-ratio} &
+    \multicolumn{2}{c}{p-value} \\[1ex]
+const &
+  1&39980 &
+    0&342816 &
+      4&083 &
+        0&0000 \\
+AAPL$_{t-1}$ &
+  $-$0&0511017 &
+    0&0205349 &
+      $-$2&489 &
+        0&0130 \\
+AAPL$_{t-2}$ &
+  0&0451377 &
+    0&0204948 &
+      2&202 &
+        0&0278 \\
+ACN$_{t-1}$ &
+  0&962043 &
+    0&0304365 &
+      31&61 &
+        0&0000 \\
+ACN$_{t-2}$ &
+  0&000728648 &
+    0&0304690 &
+      0&02391 &
+        0&9809 \\
+AAP &
+  0&00536058 &
+    0&00180783 &
+      2&965 &
+        0&0031 \\
+ABBV &
+  0&00436910 &
+    0&00607309 &
+      0&7194 &
+        0&4720 \\
+AAL &
+  $-$0&00915403 &
+    0&00757161 &
+      $-$1&209 &
+        0&2269 \\
+ADBE &
+  0&0271242 &
+    0&00523108 &
+      5&185 &
+        0&0000 \\
+\end{tabular}
+
+\vspace{1ex}
+\begin{tabular}{lrlr}
+Mean dependent var &  101.0673 & S.D. dependent var &  22.09446 \\
+Sum squared resid &  1656.046 & S.E. of regression &  1.151938 \\
+$R^2$ &  0.997299 & Adjusted $R^2$ &  0.997282 \\
+$F(8, 1248)$ &  57601.52 & P-value($F$) &  0.000000 \\
+$\hat{\rho}$ &  0.011377 & Durbin--Watson &  1.972035 \\
+\end{tabular}
+
+
+\end{center}
+
+\begin{center}
+F-tests of zero restrictions\\[1em]
+\begin{tabular}{lll}
+All lags of AAPL & $F(2, 1248) = 4.07099$ & [0.0173]\\
+All lags of ACN & $F(2, 1248) = 10012.1$ & [0.0000]\\
+All vars, lag 2 & $F(2, 1248) = 2.84656$ & [0.0584]\\
+\end{tabular}
+\end{center}
+
+\clearpage
+
+
+\noindent For the system as a whole ---\par
+Null hypothesis: the longest lag is 1\par
+Alternative hypothesis: the longest lag is 2\par
+Likelihood ratio test: $\chi^2_{4}$ = 18.839 [0.0008]\par
+
+
+\end{document}
